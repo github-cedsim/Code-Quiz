@@ -1,1 +1,1 @@
-# Ced-s-Code-Quiz
+# Code-Quiz
