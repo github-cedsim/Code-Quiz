@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+  <title>Quiz App</title>
+</head>
+<body>
+  <header>
+    <h1>Quiz!</h1>
+    <p>Time: <span id="timer"></span></p>
+    <a href="./scores.html">High Scores</a>
+  </header>
+
+  <main>
+    <div id="quiz" class="quiz">
+      <button id="startBtn">Start</button>
+    </div>
+
+    <div id="endGame">
+      <h2>Game Over</h2>
+
+      <form id="scoreForm">
+        <label for="initials">Enter Initials:</label>
+        <input type="text" id="initials" name="initials" required>
+        <button type="submit">Save Score</button>
+      </form>
+
+      <div id="highScore">
+        <h2>Your Score</h2>
+        <p id="scoreDisplay"></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
