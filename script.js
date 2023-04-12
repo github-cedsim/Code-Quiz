@@ -7,7 +7,8 @@ var scoreForm = document.getElementById("scoreForm");
 var scoreInput = document.getElementById("initials");
 var timeLeft = 60;
 var score = 0;
-
+var currentQuestion = 0;
+var timerInterval;
 
 var questions = [
     {
@@ -32,14 +33,12 @@ var questions = [
     },
     {
         question: "5th question",
-        answerChoices: ["1st answer choice", "2nd", "3rd", "4th", "5th"],
-        correctAnswer: "5th"
+        answerChoices: ["1st answer choice", "2nd", "3rd", "4th"],
+        correctAnswer: "4th"
     }
 ];
 
-var currentQuestion = 0;
-var timerInterval;
-
+// functions are resubale pieces of code and run only when they are called.
 function startTimer() {
     timerInterval = setInterval(function () {
         timeLeft--;
@@ -51,8 +50,7 @@ function startTimer() {
 }
 
 
-function startGame(event) {
-    event.preventDefault();
+function startGame() {
     // start the quiz!
     // 1. Start timer
     // 2. create a question
@@ -117,7 +115,7 @@ function validateAnswer(event) {
         document.body.style.backgroundColor = "red";
      
         // decrease timer by 10 secs
-        timeLeft -= 10;
+        timeLeft = timeLeft - 10;
     }
     // move onto the next question
     currentQuestion++;
@@ -141,5 +139,4 @@ scoreForm.addEventListener("submit", function (event) {
     var highScores = JSON.parse(localStorage.getItem("highScores")) || [];
     highScores.push({ initials: initials, score: score });
     localStorage.setItem("highScores", JSON.stringify(highScores));
-    window.location.href = "scores.html";
 });
