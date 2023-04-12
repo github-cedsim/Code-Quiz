@@ -10,6 +10,11 @@ body {
     margin-top: 50px;
   }
   
+  h2 {
+    text-align: center;
+    color: #3071a9;
+  }
+  
   .quiz {
     margin: 50px auto;
     padding: 20px;
