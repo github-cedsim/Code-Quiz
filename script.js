@@ -8,6 +8,7 @@ var scoreInput = document.getElementById("initials");
 var timeLeft = 60;
 var score = 0;
 
+
 var questions = [
     {
         question: "1st question", 
