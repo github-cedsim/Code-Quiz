@@ -12,29 +12,29 @@ var timerInterval;
 
 var questions = [
     {
-        question: "1st question", 
-        answerChoices: ["1st answer choice", "2nd", "3rd", "4th"],
-        correctAnswer: "2nd"
+        question: "What does CSS stand for?", 
+        answerChoices: ["Creative Style Sheets", "Cascading Style Sheets", "Colorful Style Spread", "Computer Style Spread"],
+        correctAnswer: "Cascading Style Sheets"
     },
     {
-        question: "2nd question",
-        answerChoices: ["1st answer choice", "2nd", "3rd", "4th"],
-        correctAnswer: "1st"
+        question: "What is the correct syntax for defining a hyperlink in HTML?",
+        answerChoices: ["<a href=”url”> Link text <a>", "<ref=”url”> Link text <a>", "<a=”url”> Link Text<a>", "<a href=”url”> Link text </a>"],
+        correctAnswer: "<a href=”url”> Link text </a>"
     },
     {
-        question: "3rd question",
-        answerChoices: ["1st answer choice", "2nd", "3rd", "4th"],
-        correctAnswer: "3rd"
+        question: "What is the default horizontal alignment for elements on a webpage?",
+        answerChoices: ["Left", "Center", "Right", "Wherever you type it"],
+        correctAnswer: "Left"
     },
     {
-        question: "4th question",
-        answerChoices: ["1st answer choice", "2nd", "3rd", "4th"],
-        correctAnswer: "4th"
+        question: "Which symbol is used as an abbreviation for the jQuery function?",
+        answerChoices: ["%", "&", "$", "@"],
+        correctAnswer: "$"
     },
     {
-        question: "5th question",
-        answerChoices: ["1st answer choice", "2nd", "3rd", "4th"],
-        correctAnswer: "4th"
+        question: "Which of the variables below is an array?",
+        answerChoices: ["var names=[];", "var names=array;", "var names='array'", "var names[]"],
+        correctAnswer: "var names=[];"
     }
 ];
 
