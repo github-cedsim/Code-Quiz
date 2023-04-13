@@ -10,7 +10,7 @@ var score = 0;
 var currentQuestion = 0;
 var timerInterval;
 
-// Set up your questions and answers here
+// Questions Array
 var questions = [
     {
         question: "What does CSS stand for?", 
@@ -39,7 +39,7 @@ var questions = [
     }
 ];
 
-// this function will start your timer
+// This function will start the timer
 function startTimer() {
     timerInterval = setInterval(function () {
         timeLeft--;
@@ -56,7 +56,7 @@ function startGame() {
 // this function will start the timer
 startTimer();
 
-// this function will kick off rendering the question and answers to the page
+// this function start the quiz
 generateQuestion();
 }
 
@@ -70,7 +70,7 @@ var questionEl = document.createElement("div");
 questionEl.textContent = question;
 // append that question element into our quiz area (appendChild)
 quizArea.appendChild(questionEl);
-// generateAnswerChoices
+// generate AnswerChoices
 generateAnswerChoices();
 }
 
@@ -104,7 +104,7 @@ if (userChoice === questions[currentQuestion].correctAnswer) {
     // correct answer code
 } else {
     // false
-    // incorrect answer
+    // incorrect answer screen flash red
     setTimeout(function () {
         document.body.style.backgroundColor = "#f2f2f2";
     }, 500);
@@ -115,6 +115,7 @@ if (userChoice === questions[currentQuestion].correctAnswer) {
 }
 // move onto the next question
 currentQuestion++;
+
 // conditional statement to check if you've reached the end of the questions array if(currentQuestion === questions.length)
 if (currentQuestion === questions.length || timeLeft === 0) {
     timeLeft = 0;
