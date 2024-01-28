@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  /* Headers */
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #3071a9;
+  }
+  /* Quiz Section */
+  .quiz {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .quiz p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .quiz button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #428bca;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .quiz button:hover {
+    background-color: #3071a9;
+  }
+  
+  #timer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  /* End Game Section */
+  #endGame {
+    display: none;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #endGame h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #endGame p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #endGame form {
+    margin-top: 20px;
+  }
+  
+  #endGame input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #endGame button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #428bca;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #endGame button[type="submit"]:hover {
+    background-color: #3071a9;
+  }
