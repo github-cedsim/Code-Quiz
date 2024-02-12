@@ -6,4 +6,4 @@ This is a timed quiz on HTML, CSS and JavaScript fundamentals that stores high s
 
 
 
-## Link to the Deployed Application: 
+## Link to the Deployed Application: https://github-cedsim.github.io/Code-Quiz/
