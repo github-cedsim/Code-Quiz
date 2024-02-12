@@ -136,4 +136,5 @@ var initials = scoreInput.value;
 var highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 highScores.push({ initials: initials, score: score });
 localStorage.setItem("highScores", JSON.stringify(highScores));
+window.location.href = "index.html"
 });

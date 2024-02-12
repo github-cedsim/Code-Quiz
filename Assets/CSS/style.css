@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    font-size: 20px;
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
@@ -9,6 +10,10 @@ body {
     text-align: center;
     margin-top: 50px;
   }
+
+  li {
+    font-size: px;
+ }
   
   h2 {
     text-align: center;
@@ -68,7 +73,7 @@ body {
   }
   
   #endGame p {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 10px;
   }
   
@@ -102,3 +107,56 @@ body {
   #endGame button[type="submit"]:hover {
     background-color: #3071a9;
   }
+    /* High Score Section */
+  #highScore {
+    margin-top: 20px;
+    font-size: 29px;
+  }
+  
+  #highScore span {
+    font-weight: bold;
+  }
+ 
+  /* Error Section */
+  #errorMsg {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+ #highScores {
+    font-size: xx-large;
+ } 
+
+ /* Clear Scores Button */
+ #clearScores {
+    display: block;
+    width: 10%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #428bca;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #clearScores:hover {
+    background-color: #031d36;
+    transition: 0.3s;
+    cursor: pointer;
+ }
+
+ #goBack {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    
+  }
+  
+ #scoreForm button {
+  
+ }
+ 
